@@ -1,0 +1,119 @@
+@import "./Base/reset";
+@import "./Utils/variables";
+@import "./Base/fonts";
+@import "./Base/mixins";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    background-color: $colour-classic;
+}
+
+body{
+    max-width: 500px;
+    background-color: $colour-neutral;
+    
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+body h1{
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+.grid-selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $colour-classic;
+}
+
+.step-selection{
+    background-color: $colour-neutral;
+    height: 100px;
+    width: 90%;
+    border-radius: 30px;
+    margin: 3%;
+
+    p{
+        position: relative;
+        font-weight: bolder;
+        top: 50%;
+        bottom: 50%;
+    }
+
+    &:hover{
+        background-color: $colour-primary;
+    }
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $colour-neutral;
+
+}
+    
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    max-height: $card-size;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 4px 10px;
+    background-color: $colour-classic; 
+    margin: 2%;
+}
+
+.card-image{
+    height: 200px;
+    overflow: hidden;
+    
+    img{
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+        
+        
+    }
+}
+
+.card-body{
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+    padding: 2%
+
+}
+
+.card-text{
+
+    h4{
+        font-weight: bold;
+        margin-bottom: 1%;
+    }
+
+}
+
+.footer__nav{
+    background-color: #353535;
+    color: white;
+    padding: 1em;
+    h3 {
+        font-family: 'Shrikhand', cursive;
+        font-weight: lighter;
+        margin-bottom: 2%;
+    }
+    li {
+        margin-bottom: 2%;
+    }
+    
+}
+    
