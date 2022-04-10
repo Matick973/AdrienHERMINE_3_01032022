@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head >
+    <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./sass/style.css" />
-        <script src="https://kit.fontawesome.com/bf87c7af41.js" crossorigin="anonymous"></script>    
+        <script src="https://kit.fontawesome.com/e12ec66938.js" crossorigin="anonymous"></script>    
         <title>Ohmyfood</title>
         <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style> 
         <style> @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');</style>      <!-- Police google font -->
@@ -15,40 +15,61 @@
 
         <header>
 
-            <a href="#" class="logo"><img src=".\images\logo\ohmyfood.png"/></a> 
-
+            <a href="#" class="logo"><img src=".\images\logo\ohmyfood.png"/></a>    
 
         </header>
 
         <main>
 
-            <H1> Fonctionnement</H1>
+            <div class="location"> <i class="fa-solid fa-location-dot"></i> <p>Paris, Belleville</p> </div>
+
+            <div class="explore">
+
+                <div class="explore-title">
+                    <h1> Réservez le menu qui <br> vous convient</h1>
+                </div>
+
+                <div class="explore-text">
+                    <p>Découvrez des restaurants d'exception, <br> sélectionnés par nos soins</p>
+                </div>
+
+                <a href="#restaurant" class="explore-btn">
+                    <p>Explorer nos restaurants</p>
+                </a>
+
+            </div>
+            
 
             <div class="grid-selection">
 
+                <h1>Fonctionnement</h1>
+
                 <div class="step-selection">
-                    <i class="fa-solid fa-mobile-screen-button"></i><p>Choisissez un restaurant</p>
+                    <div class="step-numbers"> <p>1</p> </div>
+                    <div class="step-text"><i class="fa-solid fa-mobile-screen-button"></i><p>Choisissez un restaurant</p></div>
                 </div>
 
                 <div class="step-selection">
-                    <i class="fa-solid fa-list-ul"></i><p>Composez votre menu</p>
+                    <div class="step-numbers"> <p>2</p> </div>
+                    <div class="step-text"><i class="fa-solid fa-list-ul"></i><p>Composez votre menu</p></div>
                 </div>
 
                 <div class="step-selection">
-                    <i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p>
+                    <div class="step-numbers"> <p>3</p> </div>
+                    <div class="step-text"><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></div>
                 </div>
 
 
             </div>
 
+            <div class="grid-cards">
 
-
-            <H1>Restaurants</H1>
-
-            <div class="grid-card">
+                <h1 id="restaurant">Restaurants</h1>
             
-                <a href="#" class="card">
-                                
+                <a href="#" class="cards">
+
+                    <div class="card-btn-new">Nouveau</div>
+
                     <div class="card-image">
                         <img src=".\images\restaurants\lapalette.jpg" alt="Restaurant la Palette du Goût"/>
                     </div>
@@ -61,11 +82,74 @@
                         </div>
 
                         <div class="card-icon">
-                            <i class="fa-thin fa-heart"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </div>
                     </div>
                 </a>
 
+                <a href="#" class="cards">
+                                
+                    <div class="card-btn-new">Nouveau</div>
+
+                    <div class="card-image">
+                        <img src=".\images\restaurants\lanote.jpg" alt="Restaurant la note enchantée"/>
+                    </div>
+
+                    <div class="card-body">
+                    
+                        <div class="card-text">
+                            <h4>La note enchantée</h4>
+                            <p>Charonne</p>
+                        </div>
+
+                        <div class="card-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="cards">
+                                
+                    <div class="card-btn-new card-btn-new--disable">Nouveau</div>
+
+                    <div class="card-image">
+                        <img src=".\images\restaurants\lafrancaise.jpg" alt="Restaurant à la française"/>
+                    </div>
+
+                    <div class="card-body">
+                    
+                        <div class="card-text">
+                            <h4>A la française</h4>
+                            <p>Cité Rouge</p>
+                        </div>
+
+                        <div class="card-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="cards">
+                                
+                    <div class="card-btn-new card-btn-new--disable">Nouveau</div>
+
+                    <div class="card-image">
+                        <img src=".\images\restaurants\ledelice.jpg" alt="Restaurant le délice des sens"/>
+                    </div>
+
+                    <div class="card-body">
+                    
+                        <div class="card-text">
+                            <h4>Le délice des sens</h4>
+                            <p>Folie-Méricourt</p>
+                        </div>
+
+                        <div class="card-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                    </div>    
+                </a>
                   
 
                    
@@ -78,7 +162,7 @@
 
 
         <footer>
-            <nav class="footer__nav">
+            <nav class="footer-nav">
 
                 <h3>ohmyfood</h3>
 
@@ -86,7 +170,7 @@
                     <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
                     <li><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
                     <li>Mentions légales</li>
-                    <li>Contact</li>
+                    <li><a href="mailto:contact@omf.com">Contact</a></li>
                 </ul>
             </nav>
         </footer>

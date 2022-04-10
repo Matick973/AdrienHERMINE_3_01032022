@@ -48,20 +48,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 5%;
-  background-color: white;
-}
-
 body {
   max-width: 500px;
   background-color: #f6f6f6;
@@ -74,7 +60,105 @@ body a {
 
 body h1 {
   font-weight: bold;
-  font-size: 1.35em;
+  font-size: 1.70em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4%;
+  background-color: white;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo img {
+  width: 45%;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+  width: 100%;
+  background-color: #e9e9e9;
+  -webkit-box-shadow: 0px 8px 9px -5px lightgrey inset;
+          box-shadow: 0px 8px 9px -5px lightgrey inset;
+}
+
+.location p {
+  font-weight: 500;
+}
+
+.location i {
+  margin-right: 1.25em;
+}
+
+.explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 10% auto 10% auto;
+}
+
+.explore .explore-title {
+  margin: 2%;
+  width: 100%;
+}
+
+.explore .explore-text {
+  font-size: 1.15em;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.explore .explore-btn {
+  width: 55%;
+  padding: 4%;
+  margin: 2%;
+  border-radius: 35px;
+  color: white;
+  font-weight: 500;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356CD));
+  background: linear-gradient(to bottom right, #FF79DA, #9356CD);
+  -webkit-box-shadow: 2px 2px 15px grey;
+          box-shadow: 2px 2px 15px grey;
 }
 
 .grid-selection {
@@ -94,11 +178,22 @@ body h1 {
   background-color: white;
 }
 
-.step-selection {
-  background-color: #f6f6f6;
-  height: 100px;
+.grid-selection h1 {
   width: 90%;
-  border-radius: 30px;
+  margin: 10% 3% 3%;
+}
+
+.step-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  height: 80px;
+  width: 85%;
+  border-radius: 25px;
   margin: 3%;
 }
 
@@ -110,10 +205,57 @@ body h1 {
 }
 
 .step-selection:hover {
-  background-color: #9356CD;
+  background-color: #f3ecf9;
+  -webkit-box-shadow: lightgray 3px 4px 20px;
+          box-shadow: lightgray 3px 4px 20px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
-.grid-card {
+.step-selection:hover i {
+  color: #9356CD;
+}
+
+.step-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: -1em;
+  background-color: #9356CD;
+  border-radius: 45px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  overflow: visible;
+}
+
+.step-numbers p {
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 1em;
+}
+
+.step-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: larger;
+  width: 100%;
+}
+
+.step-text i {
+  margin-right: 1.25em;
+}
+
+.grid-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,10 +272,16 @@ body h1 {
   background-color: #f6f6f6;
 }
 
-.card {
+.grid-cards h1 {
+  width: 90%;
+  margin: 10% 3% 3%;
+}
+
+.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -141,10 +289,25 @@ body h1 {
   max-width: 90%;
   max-height: 350px;
   border-radius: 15px;
-  -webkit-box-shadow: lightgray 3px 4px 10px;
-          box-shadow: lightgray 3px 4px 10px;
+  -webkit-box-shadow: lightgray 3px 4px 20px;
+          box-shadow: lightgray 3px 4px 20px;
   background-color: white;
-  margin: 2%;
+  margin: 3%;
+}
+
+.card-btn-new {
+  position: absolute;
+  padding: 2%;
+  top: 15px;
+  right: 15px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #99E2D0;
+  color: #278870;
+}
+
+.card-btn-new--disable {
+  display: none;
 }
 
 .card-image {
@@ -153,6 +316,8 @@ body h1 {
 }
 
 .card-image img {
+  max-width: 100%;
+  height: auto;
   border-radius: 15px 15px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -162,31 +327,52 @@ body h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 50%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2%;
+  padding: 5%;
 }
 
 .card-text h4 {
   font-weight: bold;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
-.footer__nav {
+.card-icon {
+  font-size: 1.75em;
+}
+
+.card-icon:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356CD));
+  background: linear-gradient(to bottom right, #FF79DA, #9356CD);
+}
+
+.footer-nav {
   background-color: #353535;
   color: white;
   padding: 1em;
+  margin-top: 10%;
 }
 
-.footer__nav h3 {
+.footer-nav h3 {
   font-family: 'Shrikhand', cursive;
   font-weight: lighter;
   margin-bottom: 2%;
 }
 
-.footer__nav li {
+.footer-nav a {
+  color: white;
+}
+
+.footer-nav li {
   margin-bottom: 2%;
+}
+
+.footer-nav i {
+  width: 8%;
 }
 /*# sourceMappingURL=style.css.map */
