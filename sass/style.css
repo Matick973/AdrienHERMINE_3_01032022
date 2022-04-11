@@ -50,7 +50,6 @@ body {
 
 body {
   max-width: 500px;
-  background-color: #f6f6f6;
 }
 
 body a {
@@ -74,7 +73,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 4%;
-  background-color: white;
 }
 
 header i {
@@ -134,11 +132,12 @@ header i {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin: 10% auto 10% auto;
+  padding: 20% auto 20% auto;
+  background-color: #f6f6f6;
 }
 
 .explore .explore-title {
-  margin: 2%;
+  margin: 10% auto 2% auto;
   width: 100%;
 }
 
@@ -151,7 +150,7 @@ header i {
 .explore .explore-btn {
   width: 55%;
   padding: 4%;
-  margin: 2%;
+  margin-bottom: 10%;
   border-radius: 35px;
   color: white;
   font-weight: 500;
@@ -159,6 +158,10 @@ header i {
   background: linear-gradient(to bottom right, #FF79DA, #9356CD);
   -webkit-box-shadow: 2px 2px 15px grey;
           box-shadow: 2px 2px 15px grey;
+}
+
+.explore-btn--order {
+  width: 80%;
 }
 
 .grid-selection {
@@ -176,11 +179,12 @@ header i {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
+  padding-bottom: 10%;
 }
 
 .grid-selection h1 {
   width: 90%;
-  margin: 10% 3% 3%;
+  margin: 8% 3% 3%;
 }
 
 .step-selection {
@@ -270,6 +274,7 @@ header i {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #f6f6f6;
+  padding-bottom: 15%;
 }
 
 .grid-cards h1 {
@@ -355,7 +360,6 @@ header i {
   background-color: #353535;
   color: white;
   padding: 1em;
-  margin-top: 10%;
 }
 
 .footer-nav h3 {

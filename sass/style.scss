@@ -5,7 +5,6 @@
 
 body{
     max-width: 500px;
-    background-color: $colour-neutral;
 }
 
 body a {
@@ -22,7 +21,6 @@ header {
     align-items: center;
     justify-content: center;
     padding: 4%;
-    background-color: $colour-classic;
 
     i{
         font-size: 1.75em;
@@ -62,10 +60,11 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 10% auto 10% auto;
+    padding: 20% auto 20% auto;
+    background-color: $colour-neutral;
 
     .explore-title{
-        margin:2%;
+        margin: 10% auto 2% auto;
         width: 100%;
     }
     
@@ -78,7 +77,8 @@ header {
     .explore-btn{
         width: 55%;
         padding: 4%;
-        margin: 2%;
+        margin-bottom: 10%;
+
         border-radius: 35px;
         color: $colour-classic;
         font-weight: 500;
@@ -88,6 +88,9 @@ header {
 
 }
 
+.explore-btn--order{
+    width: 80%;
+}
 
 
 .grid-selection{
@@ -96,10 +99,10 @@ header {
     align-items: center;
     justify-content: center;
     background-color: $colour-classic;
-    
+    padding-bottom: 10%;
     h1{
         width: 90%;
-        margin: 10% 3% 3%;
+        margin: 8% 3% 3%;
     }
 }
 
@@ -168,7 +171,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: $colour-neutral;
-
+    padding-bottom: 15%;
     h1{
         width: 90%;
         margin: 10% 3% 3%;
@@ -247,7 +250,6 @@ header {
     background-color: #353535;
     color: $colour-classic;
     padding: 1em;
-    margin-top: 10%;
 
     h3 {
         font-family: 'Shrikhand', cursive;
