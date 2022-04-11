@@ -19,11 +19,14 @@ body h1{
 
 header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 4%;
     background-color: $colour-classic;
+
+    i{
+        font-size: 1.75em;
+    }
 }
 
 .logo {
