@@ -161,7 +161,7 @@ header i {
 }
 
 .explore-btn--order {
-  width: 80%;
+  width: 100%;
 }
 
 .grid-selection {
@@ -354,6 +354,7 @@ header i {
 .card-icon:hover {
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356CD));
   background: linear-gradient(to bottom right, #FF79DA, #9356CD);
+  background-clip: text;
 }
 
 .footer-nav {
