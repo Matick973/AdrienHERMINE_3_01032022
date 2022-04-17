@@ -1,0 +1,23 @@
+.footer-nav{
+    background-color: $colour-footer;
+    color: $colour-classic;
+    padding: 1em;
+
+    h3 {
+        font-family: 'Shrikhand', cursive;
+        font-weight: lighter;
+        margin-bottom: 2%;
+    }
+
+    a{
+        color: $colour-classic;
+    }
+
+    li {
+        margin-bottom: 2%;
+    }
+
+    i {
+        width: 8%;
+    }  
+}
