@@ -296,7 +296,6 @@ body{
     &:hover{
         opacity: 1;
         transition: 1s;
-    
     }
 }
 
@@ -373,14 +372,18 @@ body{
 }   
 
 .card-menu__body{
-    width: 100%;
+    min-width: 100%;
     padding: 2%;
+    content: " ";
 
     .card-menu__body--title{
         font-size: 1.1em;
         margin: 1%;
         h4{
             font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
@@ -388,11 +391,9 @@ body{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        
 
         h5{
             font-weight: bold;
-            padding-left: 20%;
         }
 
         p{
@@ -402,52 +403,48 @@ body{
             width: 70%;
             margin: 1%;
         }
-    }     
+    }
+    
+    &:hover{
+    transition: min-width(85%) 5s;
+    animation: slide-in 0.5s ease-in-out forwards;
+    
+        @keyframes slide-in {
+            0% { 
+                min-width: 100%;
+            }
+
+            100% { 
+                min-width: 85%; 
+            }
+        }
+    }
 }
 
 .card-menu__animation{
     content: " ";
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.50em;
     background-color: $colour-tertiary;
+    color: $colour-classic;
     border-radius: 0px 15px 15px 0px;
-    width: 90px;
-    animation: slide-in 2s forwards;
-    transform: translateX(100%);
+    padding: 4%;
+    width: 20%;
+}
 
-    &:hover .card-menu__animation{
-    
-        @keyframes slide-in {
-            0% { 
-            
-            }
-
-            100% { 
-                transform: translateX(0%); 
-            }
+.card-menu:hover i{
+    animation: rota360 0.5s linear forwards;
+    transform: rotate(-360deg);
+        
+    @keyframes rota360 {
+        0% { 
+            transform: rotate(-360deg);   
+        }
+        100% { 
+            transform: rotate(0deg); 
         }
     }
-
-    i{
-        content: " ";
-        color: $colour-classic;
-        animation: rotate 2s forwards;
-        transform: rotate(-360deg);
     
-        &:hover i {
-    
-            @keyframes rotate {
-                0% { 
-                
-                }
-
-                100% { 
-                    transform: rotate(0deg); 
-                }
-            }
-        }
-    }
 }

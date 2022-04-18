@@ -594,8 +594,9 @@ body h1 {
 }
 
 .card-menu__body {
-  width: 100%;
+  min-width: 100%;
   padding: 2%;
+  content: " ";
 }
 
 .card-menu__body .card-menu__body--title {
@@ -605,6 +606,9 @@ body h1 {
 
 .card-menu__body .card-menu__body--title h4 {
   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-menu__body .card-menu__body--text {
@@ -619,7 +623,6 @@ body h1 {
 
 .card-menu__body .card-menu__body--text h5 {
   font-weight: bold;
-  padding-left: 20%;
 }
 
 .card-menu__body .card-menu__body--text p {
@@ -630,9 +633,33 @@ body h1 {
   margin: 1%;
 }
 
+.card-menu__body:hover {
+  -webkit-transition: min-width(85%) 5s;
+  transition: min-width(85%) 5s;
+  -webkit-animation: slide-in 0.5s ease-in-out forwards;
+          animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    min-width: 100%;
+  }
+  100% {
+    min-width: 85%;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    min-width: 100%;
+  }
+  100% {
+    min-width: 85%;
+  }
+}
+
 .card-menu__animation {
   content: " ";
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,43 +671,23 @@ body h1 {
           align-items: center;
   font-size: 1.50em;
   background-color: #00E2D0;
-  border-radius: 0px 15px 15px 0px;
-  width: 90px;
-  -webkit-animation: slide-in 2s forwards;
-          animation: slide-in 2s forwards;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-}
-
-@-webkit-keyframes slide-in {
-  0% {
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
-@keyframes slide-in {
-  0% {
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
-.card-menu__animation i {
-  content: " ";
   color: white;
-  -webkit-animation: rotate 2s forwards;
-          animation: rotate 2s forwards;
+  border-radius: 0px 15px 15px 0px;
+  padding: 4%;
+  width: 20%;
+}
+
+.card-menu:hover i {
+  -webkit-animation: rota360 0.5s linear forwards;
+          animation: rota360 0.5s linear forwards;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 
-@-webkit-keyframes rotate {
+@-webkit-keyframes rota360 {
   0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -688,8 +695,10 @@ body h1 {
   }
 }
 
-@keyframes rotate {
+@keyframes rota360 {
   0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
