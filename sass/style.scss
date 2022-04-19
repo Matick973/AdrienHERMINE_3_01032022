@@ -67,8 +67,6 @@ body{
     }
   }
 
-
-
 .location{
     display: flex;
     justify-content: center;
@@ -257,7 +255,8 @@ body{
         align-items: center;
         height: 50%;
         justify-content: space-between;
-        padding: 5%
+        padding: 5%;
+        position: relative;
     
     }
     
@@ -277,31 +276,36 @@ body{
 .card-icon{
     position: relative;
     font-size: 1.75em;
-    background: $colour-degrade;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
-}
+    transform: translate(-30px, -15px);
+    .heart__on{
+        position: absolute;
+        background: $colour-degrade;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        &:hover{
+            opacity: 1;
+            transition: 500ms;
+        }
+    }
 
-.heart-on { 
-    position: absolute;
-    opacity: 0;
-}
-
-.heart-off {position: absolute;}
-
-.card-icon, .heart-on{
-    &:hover{
-        opacity: 1;
-        transition: 1s;
+    .heart__off{
+        position: absolute;
     }
 }
+
+.card-icon--menu{
+    font-size: 1.2em;
+    transform: translate(-40px, 0px);
+}
+
 
 .grid-menu{
     display: flex;
     position: relative;
+    top: -40px;
     flex-direction: column;
     border-radius: 30px 30px 0px 0px;
     background-color: $colour-neutral;
@@ -407,7 +411,7 @@ body{
     
     &:hover{
     transition: min-width(85%) 5s;
-    animation: slide-in 0.5s ease-in-out forwards;
+    animation: slide-in 450ms ease-in-out forwards;
     
         @keyframes slide-in {
             0% { 
@@ -435,7 +439,7 @@ body{
 }
 
 .card-menu:hover i{
-    animation: rota360 0.5s linear forwards;
+    animation: rota360 450ms linear forwards;
     transform: rotate(-360deg);
         
     @keyframes rota360 {

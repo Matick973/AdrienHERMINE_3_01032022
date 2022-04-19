@@ -20,5 +20,10 @@ header {
 }
 
 .image-top{
-    height: 265px;
+    box-sizing: border-box;
+   
+    img{
+        
+        width: 100%;
+    }
 }

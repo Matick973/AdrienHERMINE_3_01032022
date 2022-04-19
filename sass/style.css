@@ -83,7 +83,12 @@ header i {
 }
 
 .image-top {
-  height: 265px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.image-top img {
+  width: 100%;
 }
 
 .footer-nav {
@@ -457,6 +462,7 @@ body h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5%;
+  position: relative;
 }
 
 .grid-cards .card-text h4 {
@@ -467,27 +473,34 @@ body h1 {
 .card-icon {
   position: relative;
   font-size: 1.75em;
+  -webkit-transform: translate(-30px, -15px);
+          transform: translate(-30px, -15px);
+}
+
+.card-icon .heart__on {
+  position: absolute;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356CD));
   background: linear-gradient(to bottom right, #FF79DA, #9356CD);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
-}
-
-.heart-on {
-  position: absolute;
   opacity: 0;
 }
 
-.heart-off {
+.card-icon .heart__on:hover {
+  opacity: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.card-icon .heart__off {
   position: absolute;
 }
 
-.card-icon:hover, .heart-on:hover {
-  opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
+.card-icon--menu {
+  font-size: 1.2em;
+  -webkit-transform: translate(-40px, 0px);
+          transform: translate(-40px, 0px);
 }
 
 .grid-menu {
@@ -495,6 +508,7 @@ body h1 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  top: -40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -636,8 +650,8 @@ body h1 {
 .card-menu__body:hover {
   -webkit-transition: min-width(85%) 5s;
   transition: min-width(85%) 5s;
-  -webkit-animation: slide-in 0.5s ease-in-out forwards;
-          animation: slide-in 0.5s ease-in-out forwards;
+  -webkit-animation: slide-in 450ms ease-in-out forwards;
+          animation: slide-in 450ms ease-in-out forwards;
 }
 
 @-webkit-keyframes slide-in {
@@ -678,8 +692,8 @@ body h1 {
 }
 
 .card-menu:hover i {
-  -webkit-animation: rota360 0.5s linear forwards;
-          animation: rota360 0.5s linear forwards;
+  -webkit-animation: rota360 450ms linear forwards;
+          animation: rota360 450ms linear forwards;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }

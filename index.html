@@ -68,13 +68,15 @@
 
                 <h1 id="restaurant">Restaurants</h1>
             
-                <a href="1.la_palette.html" class="cards">
+                <div class="cards">
 
-                    <div class="card-btn-new">Nouveau</div>
+                    <a href="1.la_palette.html">
+                        <div class="card-btn-new">Nouveau</div>
 
-                    <div class="card-image">
-                        <img src=".\images\restaurants\lapalette.jpg" alt="Restaurant la Palette du Goût"/>
-                    </div>
+                        <div class="card-image">
+                            <img src=".\images\restaurants\lapalette.jpg" alt="Restaurant la Palette du Goût"/>
+                        </div>
+                    </a>
 
                     <div class="card-body">
                     
@@ -83,19 +85,22 @@
                             <p>Ménilmontant</p>
                         </div>
 
-                        <div class="card-icon">
-                            <i class="fa-regular fa-heart"></i>
+                         <a class="card-icon">
+                            <div class="heart__off"><i class="fa-regular fa-heart"></i></div>
+                            <div class="heart__on"><i class="fa-solid fa-heart"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards">
+
+                    <a href="2.la_note.html">     
+                        <div class="card-btn-new">Nouveau</div>
+
+                        <div class="card-image">
+                            <img src=".\images\restaurants\lanote.jpg" alt="Restaurant la note enchantée"/>
                         </div>
-                    </div>
-                </a>
-
-                <a href="2.la_note.html" class="cards">
-                                
-                    <div class="card-btn-new">Nouveau</div>
-
-                    <div class="card-image">
-                        <img src=".\images\restaurants\lanote.jpg" alt="Restaurant la note enchantée"/>
-                    </div>
+                    </a> 
 
                     <div class="card-body">
                     
@@ -104,19 +109,22 @@
                             <p>Charonne</p>
                         </div>
 
-                        <div class="card-icon">
-                            <i class="fa-regular fa-heart"></i>
+                        <a class="card-icon">
+                            <div class="heart__off"><i class="fa-regular fa-heart"></i></div>
+                            <div class="heart__on"><i class="fa-solid fa-heart"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards">
+
+                    <a href="3.la_francaise.html">          
+                        <div class="card-btn-new card-btn-new--disable">Nouveau</div>
+
+                        <div class="card-image">
+                            <img src=".\images\restaurants\lafrancaise.jpg" alt="Restaurant à la française"/>
                         </div>
-                    </div>
-                </a>
-
-                <a href="3.la_francaise.html" class="cards">
-                                
-                    <div class="card-btn-new card-btn-new--disable">Nouveau</div>
-
-                    <div class="card-image">
-                        <img src=".\images\restaurants\lafrancaise.jpg" alt="Restaurant à la française"/>
-                    </div>
+                    </a>   
 
                     <div class="card-body">
                     
@@ -125,19 +133,22 @@
                             <p>Cité Rouge</p>
                         </div>
 
-                        <div class="card-icon">
-                            <i class="fa-solid fa-heart"></i>
+                        <a class="card-icon">
+                            <div class="heart__off"><i class="fa-regular fa-heart"></i></div>
+                            <div class="heart__on"><i class="fa-solid fa-heart"></i></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cards">
+
+                    <a href="4.le_delice.html">         
+                        <div class="card-btn-new card-btn-new--disable">Nouveau</div>
+
+                        <div class="card-image">
+                            <img src=".\images\restaurants\ledelice.jpg" alt="Restaurant le délice des sens"/>
                         </div>
-                    </div>
-                </a>
-
-                <a href="4.le_delice.html" class="cards">
-                                
-                    <div class="card-btn-new card-btn-new--disable">Nouveau</div>
-
-                    <div class="card-image">
-                        <img src=".\images\restaurants\ledelice.jpg" alt="Restaurant le délice des sens"/>
-                    </div>
+                    </a>  
 
                     <div class="card-body">
                     
@@ -146,16 +157,14 @@
                             <p>Folie-Méricourt</p>
                         </div>
 
-                        <div class="card-icon">
-                            <div class="heart-off"><i class="fa-regular fa-heart"></i></div>
-                            <div class="heart-on"><i class="fa-solid fa-heart"></i></div>
-                        </div>
+                        <a class="card-icon">
+                            <div class="heart__off"><i class="fa-regular fa-heart"></i></div>
+                            <div class="heart__on"><i class="fa-solid fa-heart"></i></div>
+                        </a>
 
                     </div>    
-                </a>
-                  
-
-                   
+                </div>
+                                     
             </div>
         </main>
 
@@ -165,9 +174,9 @@
                 <h3>ohmyfood</h3>
 
                 <ul>
-                    <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
-                    <li><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
-                    <li>Mentions légales</li>
+                    <li><a href=""><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+                    <li><a href=""><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
+                    <li><a href="">Mentions légales</a></li>
                     <li><a href="mailto:contact@omf.com">Contact</a></li>
                 </ul>
             </nav>
