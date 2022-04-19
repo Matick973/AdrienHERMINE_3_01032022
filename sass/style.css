@@ -583,8 +583,6 @@ body h1 {
   content: " ";
   -webkit-animation: bottom-to-top 2s ease-in-out forwards;
           animation: bottom-to-top 2s ease-in-out forwards;
-  -webkit-animation-delay: -1;
-          animation-delay: -1;
   opacity: 0;
   overflow: hidden;
 }
@@ -605,6 +603,16 @@ body h1 {
   to {
     opacity: 1;
   }
+}
+
+.card-menu__1 {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.card-menu__2 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 .card-menu__body {
