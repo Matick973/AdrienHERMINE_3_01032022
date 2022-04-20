@@ -40,15 +40,15 @@ body{
     margin: 0px;
     border-radius: 50%;
     border: 8px solid #cef;
-    border-color: $colour-secondary transparent $colour-secondary transparent;
-    animation: lds-dual-ring 5s ease-in-out -.5s forwards;
+    border-color: $colour-secondary $colour-tertiary $colour-secondary $colour-tertiary;
+    animation: lds-dual-ring 3s ease-in-out -.5s forwards;
     opacity: 0;
   }
 
   @keyframes lds-dual-ring {
     0% {
-        width: 300px;
-        height: 300px;
+        width: 10em;
+        height: 10em;
         transform: rotate(0deg);
         opacity: .1;
     }
@@ -58,9 +58,9 @@ body{
     }
 
     80%{
-        width: 300px;
-        height: 300px;
-        opacity: .1;
+        width: 30em;
+        height: 30em;
+        opacity: .4;
     }
 
     100% { 

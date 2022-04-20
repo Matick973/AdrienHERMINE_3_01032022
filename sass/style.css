@@ -159,16 +159,16 @@ body h1 {
   margin: 0px;
   border-radius: 50%;
   border: 8px solid #cef;
-  border-color: #FF79DA transparent #FF79DA transparent;
-  -webkit-animation: lds-dual-ring 5s ease-in-out -.5s forwards;
-          animation: lds-dual-ring 5s ease-in-out -.5s forwards;
+  border-color: #FF79DA #00E2D0 #FF79DA #00E2D0;
+  -webkit-animation: lds-dual-ring 3s ease-in-out -.5s forwards;
+          animation: lds-dual-ring 3s ease-in-out -.5s forwards;
   opacity: 0;
 }
 
 @-webkit-keyframes lds-dual-ring {
   0% {
-    width: 300px;
-    height: 300px;
+    width: 10em;
+    height: 10em;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     opacity: .1;
@@ -177,9 +177,9 @@ body h1 {
     opacity: 1;
   }
   80% {
-    width: 300px;
-    height: 300px;
-    opacity: .1;
+    width: 30em;
+    height: 30em;
+    opacity: .4;
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -190,8 +190,8 @@ body h1 {
 
 @keyframes lds-dual-ring {
   0% {
-    width: 300px;
-    height: 300px;
+    width: 10em;
+    height: 10em;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     opacity: .1;
@@ -200,9 +200,9 @@ body h1 {
     opacity: 1;
   }
   80% {
-    width: 300px;
-    height: 300px;
-    opacity: .1;
+    width: 30em;
+    height: 30em;
+    opacity: .4;
   }
   100% {
     -webkit-transform: rotate(360deg);
