@@ -2,6 +2,10 @@
     background-color: $colour-footer;
     color: $colour-classic;
     padding: 1em;
+    @include for-desktop{
+        font-size: 1.25em;
+        padding: 2em;
+    }
 
     h3 {
         font-family: 'Shrikhand', cursive;
@@ -19,5 +23,8 @@
 
     i {
         width: 8%;
+        @include for-desktop{
+            width: 4%;
+        }
     }  
 }

@@ -16,6 +16,12 @@ header {
 
     img{
     width: 45%;
+    @include for-tablet{
+        width: 60%;
+    }
+    @include for-desktop{
+        width:70%;
+    }
     }
 }
 
