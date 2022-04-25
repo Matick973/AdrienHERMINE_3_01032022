@@ -142,7 +142,7 @@ header i {
 }
 
 body {
-  width: 500px;
+  width: 400px;
   min-width: 355px;
   margin-left: auto;
   /* Elements centrage page*/
@@ -183,7 +183,7 @@ body h1 {
   margin: 0px;
   border-radius: 50%;
   border: 8px solid #cef;
-  border-color: #FF79DA #00E2D0 #FF79DA #00E2D0;
+  border-color: #FF79DA #99E2D0 #FF79DA #99E2D0;
   -webkit-animation: lds-dual-ring 3s ease-in-out -.5s forwards;
           animation: lds-dual-ring 3s ease-in-out -.5s forwards;
   opacity: 0;
@@ -324,7 +324,7 @@ body h1 {
 .explore .explore-btn {
   width: 55%;
   padding: 4%;
-  margin: 10% auto 10% auto;
+  margin: 5% auto 10% auto;
   border-radius: 35px;
   color: white;
   font-weight: 500;
@@ -372,6 +372,7 @@ body h1 {
 
 .explore-btn--order {
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .grid-selection {
@@ -557,6 +558,18 @@ body h1 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .grid-cards {
+    padding-bottom: 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .grid-cards .grid-cards__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,11 +614,20 @@ body h1 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .grid-cards .cards {
+    max-width: 44%;
+  }
+}
+
 .grid-cards .card-btn-new {
   position: absolute;
   padding: 2%;
   top: 15px;
   right: 15px;
+  border-radius: 3px;
+  -webkit-box-shadow: lightgrey 0px 0px 6px;
+          box-shadow: lightgrey 0px 0px 6px;
   font-weight: bold;
   text-align: center;
   background-color: #99E2D0;
@@ -713,7 +735,7 @@ body h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 6%;
-  font-size: 1.05em;
+  font-size: 1.10em;
 }
 
 .grid-menu .title-menu h1 {
@@ -722,7 +744,9 @@ body h1 {
 }
 
 .grid-menu .title-menu i {
-  font-size: 1.75em;
+  position: absolute;
+  bottom: -15px;
+  font-size: 1.6em;
 }
 
 .set-menu {
@@ -749,7 +773,7 @@ body h1 {
 }
 
 .set-menu .set-menu__title hr {
-  border-top: 3px solid #00E2D0;
+  border-top: 3px solid #99E2D0;
   width: 8%;
 }
 
@@ -880,7 +904,7 @@ body h1 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.50em;
-  background-color: #00E2D0;
+  background-color: #99E2D0;
   color: white;
   border-radius: 0px 15px 15px 0px;
   padding: 4%;
