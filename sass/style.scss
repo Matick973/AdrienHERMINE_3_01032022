@@ -137,8 +137,8 @@ body{
     }
     
     .explore-btn{
-        width: 45%;
-        padding: 4%;
+        width: 240px;
+        padding: 20px;
         margin: 5% auto 10% auto;
         border-radius: 35px;
         color: $colour-classic;
@@ -153,7 +153,6 @@ body{
         @include for-desktop{
             margin: 3%;
             padding: 2%;
-            width: 20%;
             font-size: 1.2em;
         }
     }
