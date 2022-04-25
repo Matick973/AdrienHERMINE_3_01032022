@@ -744,6 +744,12 @@ body h1 {
   background-color: #f6f6f6;
 }
 
+@media screen and (min-width: 992px) {
+  .grid-menu {
+    border-radius: 0px 0px 0px 0px;
+  }
+}
+
 .grid-menu .title-menu {
   display: -webkit-box;
   display: -ms-flexbox;
