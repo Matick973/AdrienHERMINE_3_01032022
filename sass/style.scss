@@ -8,6 +8,7 @@
 body{
     width: 400px;
     min-width: 355px;
+    max-width: 1200px;
 
     margin-left: auto; /* Elements centrage page*/
     margin-right: auto; /* Elements centrage page*/
@@ -110,6 +111,18 @@ body{
     padding: 20% auto 20% auto;
     background-color: $colour-neutral;
     
+    @include for-tablet{
+        width: 50%;
+        align-self: center;
+        background-color: $colour-classic;
+    }
+
+    @include for-desktop{
+        width: 100%;
+        flex-direction: row;
+        background-color: darken($color: $colour-neutral, $amount: 5%);
+    }
+
     .explore-title{
         margin: 10% auto 2% auto;
         width: 100%;
@@ -124,7 +137,7 @@ body{
     }
     
     .explore-btn{
-        width: 55%;
+        width: 45%;
         padding: 4%;
         margin: 5% auto 10% auto;
         border-radius: 35px;
@@ -140,26 +153,19 @@ body{
         @include for-desktop{
             margin: 3%;
             padding: 2%;
+            width: 20%;
+            font-size: 1.2em;
         }
-    }
-
-    @include for-tablet{
-        width: 50%;
-        align-self: center;
-        background-color: $colour-classic;
-    }
-
-    @include for-desktop{
-        width: 100%;
-        flex-direction: row;
-        background-color: darken($color: $colour-neutral, $amount: 5%);
-        
     }
 }
 
 .explore-btn--order{
     width: 100%;
     padding-bottom: 40px;
+    justify-content: center;
+    @include for-desktop{
+        background-color: $colour-neutral !important;
+    }
 }
 
 .grid-selection{
@@ -299,7 +305,6 @@ body{
             width: 100%;
             margin: 3%;
         }
-
     }
 
     .cards {
@@ -437,6 +442,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5%;
+    width: 95%;
 
     .set-menu__title{
         margin-left: 6%;
@@ -453,6 +459,23 @@ body{
         }
     }
 
+    @include for-tablet{
+        width: 370px;
+    }
+    @include for-desktop{
+        width: 30%;
+    }
+}
+
+.set-menu-mq{
+    @include for-tablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    
 }
 
 .card-menu{
@@ -518,7 +541,7 @@ body{
     }
     
     &:hover{
-    transition: min-width(85%) 5s;
+    transition: min-width(85%);
     animation: slide-in 450ms ease-in-out forwards;
     
         @keyframes slide-in {
