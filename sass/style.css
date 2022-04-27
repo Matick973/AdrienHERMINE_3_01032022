@@ -100,16 +100,14 @@ header i {
   max-height: 215px;
 }
 
-.image-top img {
-  position: relative;
-  bottom: 280px;
-  width: 100%;
-}
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .image-top {
     overflow: hidden;
   }
+}
+
+.image-top img {
+  width: 100%;
 }
 
 .footer-nav {

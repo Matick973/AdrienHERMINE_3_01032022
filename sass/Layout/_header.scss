@@ -28,12 +28,12 @@ header {
 .image-top{
     box-sizing: border-box;
     max-height: 215px;
-    img{
-        position: relative;
-        bottom: 280px;
-        width: 100%;
-    }
-    @include for-desktop{
+
+    @include for-tablet{
         overflow: hidden;
+    }
+
+    img{
+        width: 100%;
     }
 }
