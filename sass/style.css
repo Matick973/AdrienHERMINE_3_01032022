@@ -101,6 +101,8 @@ header i {
 }
 
 .image-top img {
+  position: relative;
+  bottom: 280px;
   width: 100%;
 }
 
@@ -758,7 +760,13 @@ body h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 6%;
-  font-size: 1.10em;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-menu .title-menu {
+    font-size: 1.3em;
+  }
 }
 
 .grid-menu .title-menu h1 {

@@ -424,8 +424,12 @@ body{
         display: flex;
         justify-content: space-between;
         margin: 6%;
-        font-size: 1.10em;
+        font-size: 1em;
         
+        @include for-tablet{
+            font-size: 1.3em;
+        }
+
         h1{
             font-family: 'Shrikhand', cursive;
             font-weight: lighter;
@@ -476,8 +480,6 @@ body{
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    
-    
 }
 
 .card-menu{
