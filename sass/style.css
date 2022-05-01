@@ -308,7 +308,6 @@ body h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: 20% auto 20% auto;
   background-color: #f6f6f6;
 }
 
@@ -927,8 +926,6 @@ body h1 {
 }
 
 .card-menu__body:hover {
-  -webkit-transition: min-width(85%);
-  transition: min-width(85%);
   -webkit-animation: slide-in 450ms ease-in-out forwards;
           animation: slide-in 450ms ease-in-out forwards;
 }
