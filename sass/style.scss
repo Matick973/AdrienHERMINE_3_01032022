@@ -383,6 +383,7 @@ body{
     position: relative;
     font-size: 1.75em;
     transform: translate(-30px, 0px);
+
     .heart__on{
         position: absolute;
         background: $colour-degrade;
@@ -405,7 +406,6 @@ body{
 
 .card-icon--menu{
     font-size: 1.2em;
-    transform: translate(-40px, 0px);
 }
 
 .grid-menu{
@@ -435,7 +435,6 @@ body{
         }
 
         i{
-            position: absolute;
             bottom: -15px;
             font-size: 1.6em;
         }

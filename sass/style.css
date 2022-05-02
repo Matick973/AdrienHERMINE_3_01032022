@@ -726,8 +726,6 @@ body h1 {
 
 .card-icon--menu {
   font-size: 1.2em;
-  -webkit-transform: translate(-40px, 0px);
-          transform: translate(-40px, 0px);
 }
 
 .grid-menu {
@@ -772,7 +770,6 @@ body h1 {
 }
 
 .grid-menu .title-menu i {
-  position: absolute;
   bottom: -15px;
   font-size: 1.6em;
 }
